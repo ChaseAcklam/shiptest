@@ -1,223 +1,1396 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="resources/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Anton|Noto+Sans|Quicksand|Source+Sans+Pro:200" rel="stylesheet">
-    <title>ShipFCS</title>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="<!-- Teamname -->" />
+<meta name="description" content="Official website for <!-- Teamname -->" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title><!-- Teamname --></title>
+<style type="text/css">
+  html {
+    font-size: 16px;
+    font-family: Helvetica;
+  }
 
-  </head>
-  <body>
-    <!-- Header Section -->
-    <header>
-      <div class="head-container">
-        <div class="head-main">
-          <div class="logo-container">
-            <img src="resources/images/logotwo.jpg" alt="Company Logo">
-          </div>
-          <div class="head-nav">
-            <div class="nav-item">
-              <a href="index.html">Home</a>
-            </div>
-            <div class="nav-item">
-              <a href="second.html">Services</a>
-            </div>
-            <div class="nav-item">
-              <a href="#">Example</a>
-            </div>
-            <div class="nav-item">
-              <a href="#">Example</a>
-            </div>
-          </div>
+  /* This is the Header section */
+
+
+  .head-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    height: 9rem;
+    background-color: black;
+    width: 100%;
+  }
+
+  .head-main{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    width: 80%;
+  }
+
+  .contactinfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 4rem;
+    width: 30%;
+    color: white;
+    font-weight: 900;
+    font-size: 1.5rem;
+  }
+
+  .servicesmainone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 30rem;
+  }
+  .servicesmaintwo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    width: 100%;
+    height: 30rem;
+  }
+  .servicesmainthree {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 30rem;
+  }
+
+  .serviceszone {
+    height: 100%;
+    width: 1200px;
+    border: 5px dotted blue;
+  }
+
+  .serviceszoneblack {
+    width: 1200px;
+    height: 100%;
+    border: 5px dotted red;
+  }
+
+
+
+  .whitespace {
+    height: 30%;
+    width: 100%;
+  }
+  .darkspace {
+    height: 30%;
+    width: 100%;
+    background-color: black;
+    color: white;
+  }
+
+  .head-quote {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 20%;
+    height: 95%;
+    margin-right: 2rem;
+  }
+
+  .quotebox {
+    text-align: center;
+    color: rgb(116, 183, 50);
+    font-weight: bold;
+    border: 4px solid white;
+    font-size: 1rem;
+    width: 5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    transition: all 350ms ease;
+  }
+
+  .quotebox:hover {
+    border: 4px solid rgb(116, 183, 50);
+    color: rgb(1, 120, 194);
+    font-size: 1.2rem;
+  }
+
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+  }
+
+  .head-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+    margin-left: 2rem;
+  }
+
+  /*color: rgb(116, 183, 50);*/
+
+  .nav-item a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-family: 'Quicksand', sans-serif;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    transition: all 250ms linear;
+  }
+  .nav-item-foot a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-family: 'Quicksand', sans-serif;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    transition: all 250ms linear;
+  }
+
+  .nav-item-foot a:hover {
+    font-weight: 900;
+    color: rgb(116, 183, 50);
+  }
+
+  .nav-item a:hover {
+    color: rgb(1, 120, 194);
+  }
+
+  /* This is the Banner Section */
+
+
+  .banner-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 36rem;
+    background-image: url("https://app.salesdrip.com/users/myteam44301/Media220.jpg");
+    background-size: cover;
+  }
+
+  .banner-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    width: 1200px;
+  }
+
+  .banner-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .banner-slogan {
+    font-size: 6rem;
+    font-weight: 900;
+    color: white;
+  }
+
+
+
+  /*About Section*/
+  .about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .aboutstrip {
+    height: 4rem;
+    width: 100%;
+    background-color: black;
+  }
+
+  .scrollingMeter-about {
+
+  }
+
+  .aboutframe {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 1200px;
+    background-color: white;
+  }
+
+  .aboutcontent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    height: 13rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+  .aboutcontentservice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    height: 13rem;
+    margin-top: 0rem;
+    margin-bottom: 3rem;
+  }
+
+  .movingboxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 40%;
+    margin-top: 5rem;
+  }
+
+  .about-title {
+    font-weight: bolder;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    letter-spacing: .1rem;
+
+  }
+
+  .about-info{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 1.2
+  }
+
+  /* .aboutusone {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 1rem;
+    border: 3px dotted blue;
+    width: 90%;
+  }
+  */
+  .aboutonecontent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  /*
+  .aboutimgone{
+    margin-right: 8rem;
+  }
+  .about-info ul li{
+    line-height: 2;
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  .examplebox {
+    margin-top: 5rem;
+    display:flex;
+    justify-content: center;
+    color: black;
+    font-weight: bolder;
+    border: 6px solid black;
+    font-size: 2rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    text-align: center;
+    width: 10rem;
+  }
+  */
+
+
+  .aboutframebanner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-image: url("https://app.salesdrip.com/users/myteam44301/Media216.png");
+    background-size:cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+  }
+
+  .aboutimgtwo {
+    margin-left: 3rem;
+    height: 25rem;
+  }
+
+  .aboutustwo {
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row-reverse;
+    width: 1200px;
+    transition: all 250ms linear;
+  }
+
+  .aboutustwo:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+  }
+
+  .quoteboxabout {
+    margin-top: 5rem;
+    color: rgb(116, 183, 50);
+    font-weight: bold;
+    border: 6px solid black;
+    font-size: 2rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    transition: all 12ms ease-in;
+    background-color: white;
+    transition: all 350ms ease;
+  }
+
+  .quoteboxabout:hover {
+    color: rgb(1, 120, 194);
+    border: 6px solid rgb(116, 183, 50);
+    font-size: 2.2rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+  }
+
+  .aboutframetwo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+    height: 35rem;
+  }
+
+  .aboutframetwoservice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    height: 50rem;
+
+  }
+  /* images area */
+
+  .imagelist {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 1200px;
+  }
+
+  .imagelist h1{
+    width: 15rem;
+    line-height: 1rem;
+    font-size: 4rem;
+    margin-bottom: 3rem;
+    font-family: 'Quicksand', sans-serif;
+    margin-bottom: 5rem;
+  }
+
+  .twoimg img{
+    border: .2rem solid rgb(1, 120, 194);
+    border-radius: 1rem;
+
+  }
+
+  .twoimg {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+  }
+
+
+  .twoimgcontent ul li {
+    line-height: 3rem;
+    font-size: 1.50rem;
+    font-weight: bold;
+    list-style: circle;
+  }
+
+  .twoimgcontent ul li:nth-child(2n+1) {
+    color: rgb(1, 120, 194);
+  }
+
+
+
+  .serviceimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 1200px;
+    background-image: url("https://app.salesdrip.com/users/myteam44301/Media223.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+  }
+
+  /*How our tech helps you Section */
+
+  .aboutframethree {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    background-color: black;
+    height: 55rem;
+    position: absolute;
+  }
+
+
+  .techhelps h1{
+    padding: 5rem;
+    color: white;
+    line-height: 1rem;
+    font-size: 4rem;
+    font-family: 'Quicksand', sans-serif;
+    margin-bottom: 5rem;
+  }
+
+  .techtitle {
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 3rem;
+    font-family: 'Noto Sans', sans-serif;
+  }
+
+  .techhelps {
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+  }
+
+  .techcontent {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1rem;
+    line-height: 1.2;
+
+  }
+
+  .techsection {
+    width: 35rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .green {
+    color: rgb(116, 183, 50);
+  }
+
+  .blue {
+    color: rgb(1, 120, 194);
+  }
+
+  .techsection {
+    color: white;
+  }
+
+
+  .learnmrebtn {
+    margin-top: 5rem;
+    font-family: Helvetica;
+    color: rgb(1, 120, 194);
+    border: .3rem solid rgb(116, 183, 50);
+    font-size: 2rem;
+    font-weight: 900;
+    padding: 1.5rem;
+    border-radius: 1.7rem;
+    top: 0;
+    transition: all 300ms ease;
+  }
+
+  .learnmrebtn:hover {
+    color: white;
+    border: .3rem solid white;
+  }
+
+  .black {
+    background-color: black;
+    width: 100%;
+  }
+
+  .spacer {
+    width: 100%;
+    height: 48rem;
+  }
+
+
+  #b {
+    z-index: 10;
+    position: absolute;
+    width: 1rem;
+    height: 1.5rem;
+    background-color: black;
+    transition: all 1100ms ease-out;
+  }
+
+  #a:hover ~ #b {
+    background-color: rgb(1, 120, 194);
+    width: 100%;
+    z-index: 3;
+  }
+
+  /*Footer Section*/
+  footer {
+    width: 100%;
+  }
+
+  .footer:hover {
+    background-color: rgb(1, 120, 194);
+    z-index: 15;
+  }
+
+
+
+  .footer {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 9rem;
+    background-color: black;
+    width: 100%;
+  }
+
+  .footnav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+
+  /* Scrolling meter code */
+
+  .progress-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 2rem;
+    background: #000;
+  }
+
+  .progress-bar {
+    margin-top: 1rem;
+    height: 2rem;
+    background: rgb(1, 120, 194);
+    width: 0%;
+  }
+
+
+  .option-boxes {
+    margin-right: 3rem;
+    margin-left: 3rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    width: 20rem;
+    height: 10rem;
+    color: rgb(1, 120, 194);
+    background-color: rgb(220, 220, 220);
+    transition: all 400ms ease;
+    margin-top: 1rem;
+    margin-bottom:5rem;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .option-boxes:hover {
+    margin-top: 0;
+    color: white;
+
+  }
+
+
+
+  .boxarrow {
+    background-color: rgb(116, 183, 50);
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: .5rem;
+    width: 100%;
+    font-weight: 900;
+    color: white;
+  }
+
+  .boxtext {
+    background-color: black;
+    font-weight: bold;
+    padding-left: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    height: 100%;
+    align-items: center;
+  }
+
+  /* Navigation Styles */
+  /*Style 'show menu' label button and hide it by default*/
+  .show-menu {
+  	text-decoration: 	none;
+  	color: 				<!-- Color :: Mobile Navigation Icon Color :: #000000 -->;
+  	text-align:	 		center;
+  	display: 			none;
+  	}
+  /*Hide checkbox*/
+  input[type=checkbox]{
+  	display: 			none;
+  	}
+  /*Show menu when invisible checkbox is checked*/
+  input[type=checkbox]:checked ~ #nav{
+  	display: 			inline;
+  	}
+  .control_panel {
+    width: 100%;
+    list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 2.1rem;
+  background-color: rgb(231, 231, 229);
+  box-shadow: 0px 1.5px 9px grey;
+  margin: 0;
+  	}
+  #controlPanel {
+    list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 2.1rem;
+  margin-right: 8rem;
+  	}
+
+    #controlPanel ul {
+      margin: 0;
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      align-items: flex-start;
+    }
+
+    #controlPanel li{
+      color: white;
+    }
+
+  ul #nav {
+    height: 2rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  #navitem a {
+    text-transform: uppercase;
+    border-bottom: 2px solid rgb(10, 10, 10);
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    padding-left:1.5rem;
+    padding-right: 1.5rem;
+    list-style: none;
+    color: #44d400;
+    text-decoration: none;
+    font-family: 'Muli', sans-serif;
+    transition: all 400ms ease;
+    margin: 1.5;
+  }
+
+  #navitem a:hover {
+    border-bottom: 2px solid white;
+    color: white;
+  }
+
+  #navitem {
+    transition: all 400ms ease;
+  }
+
+
+  #controlPanel p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  	}
+  #nav{
+    height: 2rem;
+    transition: all 400ms ease;
+  	}
+
+  #nav li{
+    min-width: 6rem;
+    z-index: 3;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: rgb(30, 29, 27);
+    transition: all 300ms ease;
+  	}
+  #nav a {
+    font-size: 90%;
+        letter-spacing: .08rem;
+    text-transform: uppercase;
+    border-bottom: 2px solid rgb(10, 10, 10);
+    padding-left: 1rem;
+    padding-right: 3rem;
+    padding-top: .30rem;
+    padding-bottom: .2rem;
+    font-family: 'Oswald',"Helvetica Neue",Helvetica,Arial,sans-serif;
+    border-bottom: 4px solid rgb(231, 231, 229);
+    list-style: none;
+    color: black;
+    text-decoration: none;
+
+  }
+
+
+  #nav a:hover{
+    border-bottom: 4px solid rgb(7, 139, 255);
+    background-color: white;
+  	}
+
+  .activeNav {
+  	text-decoration: none !important;
+  }
+
+
+  /*--- DROPDOWN ---*/
+  #nav ul{
+
+    margin-left: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+  	background-color: rgb(10, 10, 10); /* Adding a background makes the dropdown work properly in IE7+. Make this as close to your page's background as possible (i.e. white page == white background). */
+  	background-color: rgb(10, 10, 10); /* But! Let's make the background fully transparent where we can, we don't actually want to see it if we can help it... */
+  	list-style:			none;
+  	position:			relative;
+    bottom: 0;
+  	display: none; /* Hide off-screen when not needed (this is more accessible than display:none;) */
+  	padding:			0; /* This gets rid of any alignment issues */
+  	}
+  #nav ul li{
+    background-color: white;
+    z-index: 3;
+  	padding-top:		0px; /* Introducing a padding between the li and the a give the illusion spaced items */
+    border: none;
+    width: 80%;
+  	}
+  #nav ul li a{
+    color: black;
+    background-color: white;
+    font-size: 14.4px;
+    width: 70%;
+    position: relative;
+    padding-left: 1.5rem;
+    padding-right: 3rem;
+    padding-top: .60rem;
+    padding-bottom: .6rem;
+    border-bottom: 1px solid white;
+    /* Stop text wrapping and creating multi-line dropdown items */
+  	}
+  #nav li:hover ul{ /* Display the dropdown on hover */
+  	display: flex; /* Bring back on-screen when needed */
+  	}
+  #nav li:hover a{ /* These create persistent hover states, meaning the top-most link stays 'hovered' even when your cursor has moved down the list. */
+  	text-decoration:	none;
+  	}
+  #nav li:hover ul a{ /* The persistent hover state does however create a global style for links even before they're hovered. Here we undo these effects. */
+  	  background-color: white;
+          letter-spacing: .08rem;
+  	text-decoration:	none;
+    text-transform: capitalize;
+    border-bottom:1px solid lightgray;
+  	color: black;
+  	font-size:			80%;
+    font-family: 'Rubik',"Helvetica Neue",Helvetica,Arial,sans-serif;
+  	}
+  #nav li:hover ul li a:hover{ /* Here we define the most explicit hover states--what happens when you hover each individual link. */
+  	  background-color: rgb(7, 139, 255);
+  	color: white;
+  	text-decoration:	underline;
+    transition: all 300ms ease;
+    border-bottom:rgb(7, 139, 255);
+    font-family: 'Rubik',"Helvetica Neue",Helvetica,Arial,sans-serif;
+  	}
+
+  #nav ul li a:hover {
+    border-bottom:rgb(7, 139, 255);
+    background-color: rgb(7, 139, 255)
+    color: white;
+    transition: all 300ms ease;
+  }
+
+  /*--- -----------------------------------------------*/
+  /* Main Template Styles */
+
+  #main {
+    background: 		<!-- Color :: Bold-Pro Interior Background Color :: #ffffff -->;
+  	z-index: 			991;
+  	position:			relative;
+  	overflow:			hidden;
+  	}
+  #main a {
+  	cursor: 			pointer;
+  	}
+  #main table {
+  	max-width: 			100%!important;
+  	}
+  #homepage table {
+  	max-width: 			100%!important;
+  	}
+  #homepageMain {
+  	clear: 				both;
+  	display: 			<!-- InitialHomepageDisplay -->;
+  	width: 				100%;
+  	}
+  #homepage {
+  	overflow:			hidden;
+  	}
+  .customPage {
+  	clear: 				both;
+  	display: 			none;
+  	width: 				100%;
+  	}
+  .customPageContent {
+  	overflow:			hidden;
+  	}
+  .interior {
+      position: relative;
+      /* margin-bottom: 10px; */
+      font-size: 16px;
+      line-height: 1.5;
+      color: #333;
+      text-align: left;
+      margin-bottom:	30px;
+      width: 100%;
+  }
+  .interior input[type=checkbox] {
+    display: inline ;
+  }
+  .center_box {
+  	padding:			0px;
+  	}
+  .side {
+  	position:			relative;
+  	float:				right;
+  	width:				324px;
+  	}
+  .sub-content {
+  	padding: 			10px;
+  	margin:				0;
+  	color:				#59595d;
+  	background-color: 	#d3e1e3;
+  	width: 				100%;
+  	height:				213px;
+  	bottom:				0;
+  	font-size:			13px;
+  	}
+  .sub-content td {
+  	font-size:			13px;
+  	color:				#4a4a4a;
+  	}
+
+    /*FT NEW CSS FOR CART*/
+    #leftNav {
+      margin-right: 25px;
+    }
+    .store_item_right_column select {
+      max-width: 200px;
+    }
+    #storeItems tr {
+      display: block;
+    }
+    #cart {
+      background: none repeat scroll 0 0 #f2f2f2 !important;
+      border: 1px solid #e1e1e1 !important;
+      border-radius: 10px;
+      padding: 20px !important;
+      width: 93% !important;
+    }
+    #cart tr td {
+      padding: 0 0 10px;
+    }
+    #viewCartButton a {
+      background: #BC8124 !important;
+      border: 1px solid #BE7F1B;
+      padding: 5px 15px !important;
+    }
+    .addToCartButton {
+      background: #bc8124 !important;
+      color: #fff !important;
+      font-size: 15px;
+      padding: 7px 15px !important;
+    }
+    .store_item_left_column img {
+      clear: both;
+    }
+    .billingInformationLine span, .billingInformationLine div {
+      display: block;
+      float: none !important;
+      padding: 7px 0 !important;
+      width: 100% !important;
+    }
+    .shippingInformationLine {
+      display: block;
+      float: none !important;
+      padding: 7px 0 !important;
+      width: 100% !important;
+    }
+    @media screen and (max-width : 480px){
+    	#storeItems td {
+      		display: block;
+      		float: left;
+    	}
+    }
+
+    .storeItemCustomField {
+      color: #666 !important;
+      margin: 0 !important;
+    }
+    .storeItemShoppingOptions {
+      color: #666 !important;
+    }
+    .storeItemDescription {
+      color: #777;
+      font-size: 14px;
+      line-height: 20px;
+    }
+    .cart_item_right_column {
+      vertical-align: inherit !important;
+    }
+    .store_item_right_column select {
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      color: #555;
+      font-size: 14px;
+      margin: 3px 0 0;
+      max-width: 200px;
+      padding: 3px 2px 4px 5px;
+    }
+    .storeItemName {
+      font-family: helvetica neue,helvetica,arial,verdana;
+      font-size: 26px;
+      font-weight: normal;
+      line-height: normal;
+    }
+    .storeItemPrice {
+      color: #bc8124;
+      font-family: georgia;
+      font-size: 19px;
+      font-weight: normal !important;
+      margin-bottom: 20px;
+    }
+    .cart_item_table {
+      color: #666;
+      margin-left: -5px;
+    }
+    .addToCartButton:hover {
+      color: #e1e1e1 !important;
+      text-decoration: none !important;
+    }
+    .checkoutButton, #checkoutButton {
+      background: #bc8124 !important;
+      color: #fff !important;
+      font-size: 14px;
+      padding: 6px 15px !important;
+    }
+    #updateCartButton {
+      background: #e1e1e1 !important;
+      border: 1px solid #ccc;
+      font-size: 12px !important;
+      padding: 5px 10px !important;
+    }
+    #returnToStoreButton {
+      background: #e1e1e1 !important;
+      border: 1px solid #ccc;
+      font-size: 12px !important;
+      padding: 5px 10px !important;
+    }
+    .container {
+    	margin-left:	auto;
+    	margin-right:	auto;
+    	width:	1200px;
+    	display: inline-block;
+    }
+    a.button {
+        padding: 20px 30px;
+        background-color: #F60;
+        border-radius: 30px;
+        margin-top: 30px;
+        color: #fff;
+        font-weight: 500;
+        display: inline-block;
+    }
+    a.button:hover {
+    	background-color: #fff;
+    	color:	#f60;
+    }
+    .orange-bg {
+    	width: 100%;
+    	background-color:	#f60;
+    	padding:	20px 0px;
+    	color:	#fff;
+    	text-align: left;
+    }
+    .white-bg {
+    	width: 100%;
+    	background-color:	#fff;
+    	padding:	20px 0px;
+    	color:	#333;
+    	text-align: left;
+    }
+    .about-bg {
+    	width: 100%;
+    	background-size:	100%;
+    	background-image: url('https://app.salesdrip.com/users/myteam42369/Media686.jpg');
+    	padding:	20px 0px;
+    	color:	#333;
+    	text-align: left;
+    }
+    .about-bg p {
+    	line-height: 2;
+    }
+    .white {
+    	color:	#fff;
+    }
+    .orange {
+    	color:	#f60;
+    }
+    ul.white-list li {
+        list-style-position: inside;
+        background: url('https://app.salesdrip.com/users/myteam42369/Media682.png');
+        background-repeat: no-repeat;
+        background-position: left;
+        padding-left: 40px;
+        list-style-type: none;
+        padding-bottom: 0px;
+        background-size: 40px;
+            font-size: 20px;
+        padding: 10px 0px 10px 40px;
+    }
+    .white-list {
+    	    margin-left: -40px;
+    }
+    a.button2 {
+        padding: 20px 30px;
+        background-color: #fff;
+        border-radius: 30px;
+        color: #f60;
+        font-weight: 500;
+        margin-top: 30px;
+        display: inline-block;
+    }
+    a.button2:hover {
+    	background-color: #f60;
+    	color:	#fff;
+    }
+
+
+
+
+
+
+  @media only screen and (max-width: 1540px) {
+    html {
+      font-size: 12px;
+    }
+    .aboutframetwo {
+      margin-bottom: 5rem;
+    }
+    .aboutimgtwo {
+      height: 100%;
+    }
+    .techsection {
+      line-height: 1.5;
+      font-size: 1.2rem;
+    }
+    .learnmrebtn {
+      padding: 1rem;
+    }
+    .spacer {
+      height: 50rem;
+    }
+  }
+  @media only screen and (max-width: 1300px) {
+    .head-quote {
+      display: none;
+    }
+
+    .banner-content {
+      width: 100%;
+    }
+  }
+
+</style>
+<script type="text/javascript" src="/scripts/app_scripts.js"></script>
+<script type="text/javascript" src="/scripts/fansite_scripts.js"></script>
+<script type="text/javascript" src="/scripts/FusionCharts.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Anton|Noto+Sans|Quicksand|Source+Sans+Pro:200" rel="stylesheet">
+</head>
+<body>
+  <!-- header area -->
+
+  <header>
+    <div class="head-container">
+      <div class="head-main">
+        <div class="logo-container">
+          <img src="https://app.salesdrip.com/users/myteam44301/Media222.jpg" alt="Company Logo">
         </div>
-        <div class="contactinfo">
-          Phone: (555) 555-5555 <br> <br>
-          Email: example@email.com
-        </div>
-        <div class="head-quote">
-          <div class="quotebox">
-            Login
-          </div>
-        </div>
+        <div class="control_panel">
+              <div id="controlPanel">
+                <label for="show-menu" class="show-menu">&equiv;</label>
+                <input type="checkbox" id="show-menu" role="button">
+                <ul id="Page1Link">
+
+                </ul>
+                <!-- CSS Control Panel -->
+
+              </div>
+              <div style="clear: both;"></div>
+            </div>
       </div>
-    </header>
-    <!-- Banner Section -->
-    <div class="banner-container">
-      <div class="banner-content">
-        <div class="banner-title">
-          ShipFCS
-        </div>
-        <div class="banner-slogan">
-          Enter Company Slogan Here.
-        </div>
+      <div class="contactinfo">
+        Phone: (555) 555-5555 <br> <br>
+        Email: example@email.com
       </div>
-      <div class="movingboxes">
-        <div class="shadowbox">
-          <div class="option-boxes">
-          <div class="boxtext">
-            Example content with link here.
-          </div>
-          <div class="boxarrow">
-            >
-          </div>
-        </div>
-        </div>
-        <div class="option-boxes">
-          <div class="boxtext">
-            Example content with link here.
-          </div>
-          <div class="boxarrow">
-            >
-          </div>
+      <div class="head-quote">
+        <div class="quotebox">
+          Login
         </div>
       </div>
     </div>
-    <!-- Begin About Section -->
-    <div class="about">
-      <div class="aboutstrip">
-        <div class="scrollingMeter-about">
-          <div class="progress-container">
-            <div class="progress-bar" id="myBar"></div>
+  </header>
+			<!-- end header area -->
+      <div class="banner-container">
+        <div class="banner-content">
+          <div class="banner-title">
+            ShipFCS
+          </div>
+          <div class="banner-slogan">
+            Enter Company Slogan Here.
+          </div>
+        </div>
+        <div class="movingboxes">
+          <div class="shadowbox">
+            <div class="option-boxes">
+            <div class="boxtext">
+              Example content with link here.
+            </div>
+            <div class="boxarrow">
+              >
+            </div>
+          </div>
+          </div>
+          <div class="option-boxes">
+            <div class="boxtext">
+              Example content with link here.
+            </div>
+            <div class="boxarrow">
+              >
+            </div>
           </div>
         </div>
       </div>
-      <div class="aboutframe">
-        <div class="aboutcontent">
-          <div class="about-title">
-            <h1>Example Title</h1>
+      <!-- Begin About Section -->
+      <div class="about">
+        <div class="aboutstrip">
+          <div class="scrollingMeter-about">
+            <div class="progress-container">
+              <div class="progress-bar" id="myBar"></div>
+            </div>
           </div>
-          <div class="about-info">
-            Example text "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-             reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-             qui officia deserunt mollit anim id est laborum."
-          </div>
-
         </div>
-
-        <!-- <div class="aboutusone">
-          <div class="aboutimgone">
-            <img src="resources/images/aboutdata.png" alt="Our Data">
-          </div>
-          <div class="aboutonecontent">
+        <div class="aboutframe">
+          <div class="aboutcontent">
+            <div class="about-title">
+              <h1>Example Title</h1>
+            </div>
             <div class="about-info">
-              <ul>
-                <li>Example of a list item</li>
-                <li>Example of a list item</li>
-                <li>Example of a list item</li>
-                <li>Example of a list item</li>
-                <li>Example of a list item</li>
-              </ul>
+              Example text "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+               reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+               qui officia deserunt mollit anim id est laborum."
             </div>
-            <div class="examplebox">
-              Example
-            </div>
+
           </div>
-        </div> -->
-        </div>
-        <div class="aboutframebanner">
-          <div class="aboutustwo">
-            <div class="aboutimgtwo">
-              <img src="resources/images/computer.png" alt="Our Warehouse">
+
+          <!-- <div class="aboutusone">
+            <div class="aboutimgone">
+              <img src="resources/images/aboutdata.png" alt="Our Data">
             </div>
             <div class="aboutonecontent">
               <div class="about-info">
-                Example text "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-             </div>
-              <div class="quoteboxabout">
-                Request A Quote
+                <ul>
+                  <li>Example of a list item</li>
+                  <li>Example of a list item</li>
+                  <li>Example of a list item</li>
+                  <li>Example of a list item</li>
+                  <li>Example of a list item</li>
+                </ul>
+              </div>
+              <div class="examplebox">
+                Example
+              </div>
+            </div>
+          </div> -->
+          </div>
+          <div class="aboutframebanner">
+            <div class="aboutustwo">
+              <div class="aboutimgtwo">
+                <img src="https://app.salesdrip.com/users/myteam44301/Media215.png" alt="Our Warehouse">
+              </div>
+              <div class="aboutonecontent">
+                <div class="about-info">
+                  Example text "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+               </div>
+                <div class="quoteboxabout">
+                  Request A Quote
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="aboutframetwo">
-          <div class="imagelist">
-            <h1>Services</h1>
-              <div class="twoimg">
-                <div class="twoimgsalesimg">
-                  <img src="resources/images/salesimg.png" alt="">
-                </div>
-                <div class="twoimgcontent">
-                  <ul>
-                    <li>LTL Shipping</li>
-                    <li>Truckload Shipping</li>
-                    <li>Expedite Shipping</li>
-                    <li>Mexico Cross-Border</li>
-                    <li>Additional Shipping Services</li>
-                  </ul>
-                </div>
-              </div>
-          </div>
-        </div>
-        <div class="black">
-
-
-        <div id="a" class="aboutframethree">
-          <div class="techhelps">
-            <h1>How <span class="blue">Our</span> Technology Helps <span class="green">You</span></h1>
-            <div class="techcontent">
-            <div class="techimg">
-              <img src="resources/images/tech.png" alt="Tech Image">
-            </div>
-            <div class="techsection">
-              <div class="techtitle">
-                <h2>Example Title</h2>
-              </div>
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-               nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-               <div class="learnmrebtn">
-                 Learn More
+          <div class="aboutframetwo">
+            <div class="imagelist">
+              <h1>Services</h1>
+                <div class="twoimg">
+                  <div class="twoimgsalesimg">
+                    <img src="https://app.salesdrip.com/users/myteam44301/Media221.png" alt="">
+                  </div>
+                  <div class="twoimgcontent">
+                    <ul>
+                      <li>LTL Shipping</li>
+                      <li>Truckload Shipping</li>
+                      <li>Expedite Shipping</li>
+                      <li>Mexico Cross-Border</li>
+                      <li>Additional Shipping Services</li>
+                    </ul>
                   </div>
                 </div>
+            </div>
+          </div>
+          <div class="black">
+
+
+          <div id="a" class="aboutframethree">
+            <div class="techhelps">
+              <h1>How <span class="blue">Our</span> Technology Helps <span class="green">You</span></h1>
+              <div class="techcontent">
+              <div class="techimg">
+                <img src="https://app.salesdrip.com/users/myteam44301/Media218.png" alt="Tech Image">
               </div>
+              <div class="techsection">
+                <div class="techtitle">
+                  <h2>Example Title</h2>
+                </div>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                 nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                 <div class="learnmrebtn">
+                   Learn More
+                    </div>
+                  </div>
+                </div>
+            </div>
           </div>
+          <div class="spacer">
+
+          </div>
+          <div id="b"></div>
+
+
+        <footer>
+          <div id="y" class="footy"></div>
+          <div id="z" class="footspace"></div>
+          <div class="footer">
+            <div class="footnav">
+              <div class="nav-item-foot">
+                <a href="#">Example</a>
+              </div>
+              <div class="nav-item-foot">
+                <a href="#">Example</a>
+              </div>
+              <div class="nav-item-foot">
+                <a href="#">Example</a>
+              </div>
+              <div class="nav-item-foot">
+                <a href="#">Example</a>
+              </div>
+            </div>
+            </div>
+
+        </footer>
         </div>
-        <div class="spacer">
-
         </div>
-        <div id="b"></div>
-
-
-      <footer>
-        <div id="y" class="footy"></div>
-        <div id="z" class="footspace"></div>
-        <div class="footer">
-          <div class="footnav">
-            <div class="nav-item-foot">
-              <a href="#">Example</a>
-            </div>
-            <div class="nav-item-foot">
-              <a href="#">Example</a>
-            </div>
-            <div class="nav-item-foot">
-              <a href="#">Example</a>
-            </div>
-            <div class="nav-item-foot">
-              <a href="#">Example</a>
-            </div>
-          </div>
-          </div>
-
-      </footer>
-      </div>
-      </div>
 
 
 
 
 
-    <!-- Scrolling Meter Script -->
-    <script>
-    window.onscroll = function() {myFunction()};
-    function myFunction() {
-      var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-      var scrolled = (winScroll / height) * 300;
-      document.getElementById("myBar").style.width = scrolled + "%";
-    }
-    </script>
-    <!-- Scrolling Meter Footer Script-->
-  </body>
+      <!-- Scrolling Meter Script -->
+      <script>
+      window.onscroll = function() {myFunction()};
+      function myFunction() {
+        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 300;
+        document.getElementById("myBar").style.width = scrolled + "%";
+      }
+      </script>
+      <!-- Scrolling Meter Footer Script-->
+
+</body>
+</html>

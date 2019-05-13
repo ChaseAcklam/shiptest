@@ -170,7 +170,7 @@ html {
   align-items: center;
   width: 100%;
   height: 36rem;
-  background-image: url(../images/banner.jpg);
+  background-image: url("https://app.salesdrip.com/users/myteam44301/Media220.jpg");
   background-size: cover;
 }
 
@@ -322,7 +322,7 @@ html {
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-image: url(../images/aboutbanner.png);
+  background-image: url("https://app.salesdrip.com/users/myteam44301/Media216.png");
   background-size:cover;
   background-attachment: fixed;
   background-position: center;
@@ -446,7 +446,7 @@ html {
   align-items: center;
   height: 100%;
   width: 1200px;
-  background-image: url("../images/placeholder.jpg");
+  background-image: url("https://app.salesdrip.com/users/myteam44301/Media223.jpg");
   background-repeat: no-repeat;
   background-position: center;
 
@@ -663,6 +663,473 @@ footer {
   height: 100%;
   align-items: center;
 }
+
+/* Navigation Styles */
+/*Style 'show menu' label button and hide it by default*/
+.show-menu {
+	text-decoration: 	none;
+	color: 				<!-- Color :: Mobile Navigation Icon Color :: #000000 -->;
+	text-align:	 		center;
+	display: 			none;
+	}
+/*Hide checkbox*/
+input[type=checkbox]{
+	display: 			none;
+	}
+/*Show menu when invisible checkbox is checked*/
+input[type=checkbox]:checked ~ #nav{
+	display: 			inline;
+	}
+.control_panel {
+  width: 100%;
+  list-style: none;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: row;
+height: 2.1rem;
+background-color: rgb(231, 231, 229);
+box-shadow: 0px 1.5px 9px grey;
+margin: 0;
+	}
+#controlPanel {
+  list-style: none;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: row;
+width: 100%;
+height: 2.1rem;
+margin-right: 8rem;
+	}
+
+  #controlPanel ul {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: flex-start;
+  }
+
+  #controlPanel li{
+    color: white;
+  }
+
+ul #nav {
+  height: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+#navitem a {
+  text-transform: uppercase;
+  border-bottom: 2px solid rgb(10, 10, 10);
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  padding-left:1.5rem;
+  padding-right: 1.5rem;
+  list-style: none;
+  color: #44d400;
+  text-decoration: none;
+  font-family: 'Muli', sans-serif;
+  transition: all 400ms ease;
+  margin: 1.5;
+}
+
+#navitem a:hover {
+  border-bottom: 2px solid white;
+  color: white;
+}
+
+#navitem {
+  transition: all 400ms ease;
+}
+
+
+#controlPanel p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+	}
+#nav{
+  height: 2rem;
+  transition: all 400ms ease;
+	}
+
+#nav li{
+  min-width: 6rem;
+  z-index: 3;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: rgb(30, 29, 27);
+  transition: all 300ms ease;
+	}
+#nav a {
+  font-size: 90%;
+      letter-spacing: .08rem;
+  text-transform: uppercase;
+  border-bottom: 2px solid rgb(10, 10, 10);
+  padding-left: 1rem;
+  padding-right: 3rem;
+  padding-top: .30rem;
+  padding-bottom: .2rem;
+  font-family: 'Oswald',"Helvetica Neue",Helvetica,Arial,sans-serif;
+  border-bottom: 4px solid rgb(231, 231, 229);
+  list-style: none;
+  color: black;
+  text-decoration: none;
+
+}
+
+
+#nav a:hover{
+  border-bottom: 4px solid rgb(7, 139, 255);
+  background-color: white;
+	}
+
+.activeNav {
+	text-decoration: none !important;
+}
+
+
+/*--- DROPDOWN ---*/
+#nav ul{
+
+  margin-left: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+	background-color: rgb(10, 10, 10); /* Adding a background makes the dropdown work properly in IE7+. Make this as close to your page's background as possible (i.e. white page == white background). */
+	background-color: rgb(10, 10, 10); /* But! Let's make the background fully transparent where we can, we don't actually want to see it if we can help it... */
+	list-style:			none;
+	position:			relative;
+  bottom: 0;
+	display: none; /* Hide off-screen when not needed (this is more accessible than display:none;) */
+	padding:			0; /* This gets rid of any alignment issues */
+	}
+#nav ul li{
+  background-color: white;
+  z-index: 3;
+	padding-top:		0px; /* Introducing a padding between the li and the a give the illusion spaced items */
+  border: none;
+  width: 80%;
+	}
+#nav ul li a{
+  color: black;
+  background-color: white;
+  font-size: 14.4px;
+  width: 70%;
+  position: relative;
+  padding-left: 1.5rem;
+  padding-right: 3rem;
+  padding-top: .60rem;
+  padding-bottom: .6rem;
+  border-bottom: 1px solid white;
+  /* Stop text wrapping and creating multi-line dropdown items */
+	}
+#nav li:hover ul{ /* Display the dropdown on hover */
+	display: flex; /* Bring back on-screen when needed */
+	}
+#nav li:hover a{ /* These create persistent hover states, meaning the top-most link stays 'hovered' even when your cursor has moved down the list. */
+	text-decoration:	none;
+	}
+#nav li:hover ul a{ /* The persistent hover state does however create a global style for links even before they're hovered. Here we undo these effects. */
+	  background-color: white;
+        letter-spacing: .08rem;
+	text-decoration:	none;
+  text-transform: capitalize;
+  border-bottom:1px solid lightgray;
+	color: black;
+	font-size:			80%;
+  font-family: 'Rubik',"Helvetica Neue",Helvetica,Arial,sans-serif;
+	}
+#nav li:hover ul li a:hover{ /* Here we define the most explicit hover states--what happens when you hover each individual link. */
+	  background-color: rgb(7, 139, 255);
+	color: white;
+	text-decoration:	underline;
+  transition: all 300ms ease;
+  border-bottom:rgb(7, 139, 255);
+  font-family: 'Rubik',"Helvetica Neue",Helvetica,Arial,sans-serif;
+	}
+
+#nav ul li a:hover {
+  border-bottom:rgb(7, 139, 255);
+  background-color: rgb(7, 139, 255)
+  color: white;
+  transition: all 300ms ease;
+}
+
+/*--- -----------------------------------------------*/
+/* Main Template Styles */
+
+#main {
+  background: 		<!-- Color :: Bold-Pro Interior Background Color :: #ffffff -->;
+	z-index: 			991;
+	position:			relative;
+	overflow:			hidden;
+	}
+#main a {
+	cursor: 			pointer;
+	}
+#main table {
+	max-width: 			100%!important;
+	}
+#homepage table {
+	max-width: 			100%!important;
+	}
+#homepageMain {
+	clear: 				both;
+	display: 			<!-- InitialHomepageDisplay -->;
+	width: 				100%;
+	}
+#homepage {
+	overflow:			hidden;
+	}
+.customPage {
+	clear: 				both;
+	display: 			none;
+	width: 				100%;
+	}
+.customPageContent {
+	overflow:			hidden;
+	}
+.interior {
+    position: relative;
+    /* margin-bottom: 10px; */
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    text-align: left;
+    margin-bottom:	30px;
+    width: 100%;
+}
+.interior input[type=checkbox] {
+  display: inline ;
+}
+.center_box {
+	padding:			0px;
+	}
+.side {
+	position:			relative;
+	float:				right;
+	width:				324px;
+	}
+.sub-content {
+	padding: 			10px;
+	margin:				0;
+	color:				#59595d;
+	background-color: 	#d3e1e3;
+	width: 				100%;
+	height:				213px;
+	bottom:				0;
+	font-size:			13px;
+	}
+.sub-content td {
+	font-size:			13px;
+	color:				#4a4a4a;
+	}
+
+  /*FT NEW CSS FOR CART*/
+  #leftNav {
+    margin-right: 25px;
+  }
+  .store_item_right_column select {
+    max-width: 200px;
+  }
+  #storeItems tr {
+    display: block;
+  }
+  #cart {
+    background: none repeat scroll 0 0 #f2f2f2 !important;
+    border: 1px solid #e1e1e1 !important;
+    border-radius: 10px;
+    padding: 20px !important;
+    width: 93% !important;
+  }
+  #cart tr td {
+    padding: 0 0 10px;
+  }
+  #viewCartButton a {
+    background: #BC8124 !important;
+    border: 1px solid #BE7F1B;
+    padding: 5px 15px !important;
+  }
+  .addToCartButton {
+    background: #bc8124 !important;
+    color: #fff !important;
+    font-size: 15px;
+    padding: 7px 15px !important;
+  }
+  .store_item_left_column img {
+    clear: both;
+  }
+  .billingInformationLine span, .billingInformationLine div {
+    display: block;
+    float: none !important;
+    padding: 7px 0 !important;
+    width: 100% !important;
+  }
+  .shippingInformationLine {
+    display: block;
+    float: none !important;
+    padding: 7px 0 !important;
+    width: 100% !important;
+  }
+  @media screen and (max-width : 480px){
+  	#storeItems td {
+    		display: block;
+    		float: left;
+  	}
+  }
+
+  .storeItemCustomField {
+    color: #666 !important;
+    margin: 0 !important;
+  }
+  .storeItemShoppingOptions {
+    color: #666 !important;
+  }
+  .storeItemDescription {
+    color: #777;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .cart_item_right_column {
+    vertical-align: inherit !important;
+  }
+  .store_item_right_column select {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color: #555;
+    font-size: 14px;
+    margin: 3px 0 0;
+    max-width: 200px;
+    padding: 3px 2px 4px 5px;
+  }
+  .storeItemName {
+    font-family: helvetica neue,helvetica,arial,verdana;
+    font-size: 26px;
+    font-weight: normal;
+    line-height: normal;
+  }
+  .storeItemPrice {
+    color: #bc8124;
+    font-family: georgia;
+    font-size: 19px;
+    font-weight: normal !important;
+    margin-bottom: 20px;
+  }
+  .cart_item_table {
+    color: #666;
+    margin-left: -5px;
+  }
+  .addToCartButton:hover {
+    color: #e1e1e1 !important;
+    text-decoration: none !important;
+  }
+  .checkoutButton, #checkoutButton {
+    background: #bc8124 !important;
+    color: #fff !important;
+    font-size: 14px;
+    padding: 6px 15px !important;
+  }
+  #updateCartButton {
+    background: #e1e1e1 !important;
+    border: 1px solid #ccc;
+    font-size: 12px !important;
+    padding: 5px 10px !important;
+  }
+  #returnToStoreButton {
+    background: #e1e1e1 !important;
+    border: 1px solid #ccc;
+    font-size: 12px !important;
+    padding: 5px 10px !important;
+  }
+  .container {
+  	margin-left:	auto;
+  	margin-right:	auto;
+  	width:	1200px;
+  	display: inline-block;
+  }
+  a.button {
+      padding: 20px 30px;
+      background-color: #F60;
+      border-radius: 30px;
+      margin-top: 30px;
+      color: #fff;
+      font-weight: 500;
+      display: inline-block;
+  }
+  a.button:hover {
+  	background-color: #fff;
+  	color:	#f60;
+  }
+  .orange-bg {
+  	width: 100%;
+  	background-color:	#f60;
+  	padding:	20px 0px;
+  	color:	#fff;
+  	text-align: left;
+  }
+  .white-bg {
+  	width: 100%;
+  	background-color:	#fff;
+  	padding:	20px 0px;
+  	color:	#333;
+  	text-align: left;
+  }
+  .about-bg {
+  	width: 100%;
+  	background-size:	100%;
+  	background-image: url('https://app.salesdrip.com/users/myteam42369/Media686.jpg');
+  	padding:	20px 0px;
+  	color:	#333;
+  	text-align: left;
+  }
+  .about-bg p {
+  	line-height: 2;
+  }
+  .white {
+  	color:	#fff;
+  }
+  .orange {
+  	color:	#f60;
+  }
+  ul.white-list li {
+      list-style-position: inside;
+      background: url('https://app.salesdrip.com/users/myteam42369/Media682.png');
+      background-repeat: no-repeat;
+      background-position: left;
+      padding-left: 40px;
+      list-style-type: none;
+      padding-bottom: 0px;
+      background-size: 40px;
+          font-size: 20px;
+      padding: 10px 0px 10px 40px;
+  }
+  .white-list {
+  	    margin-left: -40px;
+  }
+  a.button2 {
+      padding: 20px 30px;
+      background-color: #fff;
+      border-radius: 30px;
+      color: #f60;
+      font-weight: 500;
+      margin-top: 30px;
+      display: inline-block;
+  }
+  a.button2:hover {
+  	background-color: #f60;
+  	color:	#fff;
+  }
+
 
 
 
