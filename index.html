@@ -4,11 +4,21 @@
 <meta name="keywords" content="<!-- Teamname -->" />
 <meta name="description" content="Official website for <!-- Teamname -->" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Anton|Noto+Sans|Quicksand|Source+Sans+Pro:200" rel="stylesheet">
 <title><!-- Teamname --></title>
 <style type="text/css">
+
   html {
     font-size: 16px;
     font-family: Helvetica;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+
+  body {
+    margin: 0;
   }
 
   /* This is the Header section */
@@ -38,10 +48,10 @@
     align-items: center;
     flex-direction: column;
     margin-left: 4rem;
-    width: 30%;
+    width: 15%;
     color: white;
     font-weight: 900;
-    font-size: 1.5rem;
+    font-size: .8rem;
   }
 
   .servicesmainone {
@@ -99,7 +109,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    width: 20%;
+    width: auto;
     height: 95%;
     margin-right: 2rem;
   }
@@ -127,6 +137,7 @@
     justify-content: center;
     align-items: center;
     margin-left: 2rem;
+    margin-right: 5rem;
   }
 
   .head-nav {
@@ -198,12 +209,12 @@
     height: 5rem;
     font-family: 'Source Sans Pro', sans-serif;
     color: white;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     margin-bottom: 3rem;
   }
 
   .banner-slogan {
-    font-size: 6rem;
+    font-size: 4rem;
     font-weight: 900;
     color: white;
   }
@@ -219,7 +230,7 @@
   }
 
   .aboutstrip {
-    height: 4rem;
+    height: 2rem;
     width: 100%;
     background-color: black;
   }
@@ -235,6 +246,7 @@
     flex-direction: column;
     width: 1200px;
     background-color: white;
+    margin-bottom: 3rem;
   }
 
   .aboutcontent {
@@ -265,15 +277,18 @@
     flex-direction: row;
     width: 100%;
     height: 40%;
-    margin-top: 5rem;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
   }
 
   .about-title {
     font-weight: bolder;
     font-size: 2.5rem;
-    margin-bottom: 2rem;
     letter-spacing: .1rem;
+  }
 
+  about-title h1 {
+    margin: 0px;
   }
 
   .about-info{
@@ -403,7 +418,7 @@
   /* images area */
 
   .imagelist {
-    margin-top: 5rem;
+    margin-top: 0rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -474,12 +489,13 @@
 
 
   .techhelps h1{
-    padding: 5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     color: white;
     line-height: 1rem;
     font-size: 4rem;
     font-family: 'Quicksand', sans-serif;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
   }
 
   .techtitle {
@@ -495,7 +511,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
+    margin-bottom: 6rem;
   }
 
   .techcontent {
@@ -586,6 +602,10 @@
     z-index: 15;
   }
 
+  #b {
+
+  }
+
 
 
   .footer {
@@ -613,13 +633,13 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 2rem;
+    height: 1rem;
     background: #000;
   }
 
   .progress-bar {
     margin-top: 1rem;
-    height: 2rem;
+    height: 1rem;
     background: rgb(1, 120, 194);
     width: 0%;
   }
@@ -635,7 +655,6 @@
     width: 20rem;
     height: 10rem;
     color: rgb(1, 120, 194);
-    background-color: rgb(220, 220, 220);
     transition: all 400ms ease;
     margin-top: 1rem;
     margin-bottom:5rem;
@@ -670,6 +689,8 @@
     font-size: 1.5rem;
     height: 100%;
     align-items: center;
+    border: 3px solid black;
+    border-radius: 10px;
   }
 
   /* Navigation Styles */
@@ -696,8 +717,6 @@
   align-items: center;
   flex-direction: row;
   height: 2.1rem;
-  background-color: rgb(231, 231, 229);
-  box-shadow: 0px 1.5px 9px grey;
   margin: 0;
   	}
   #controlPanel {
@@ -777,26 +796,18 @@
     transition: all 300ms ease;
   	}
   #nav a {
-    font-size: 90%;
-        letter-spacing: .08rem;
-    text-transform: uppercase;
-    border-bottom: 2px solid rgb(10, 10, 10);
-    padding-left: 1rem;
-    padding-right: 3rem;
-    padding-top: .30rem;
-    padding-bottom: .2rem;
-    font-family: 'Oswald',"Helvetica Neue",Helvetica,Arial,sans-serif;
-    border-bottom: 4px solid rgb(231, 231, 229);
-    list-style: none;
-    color: black;
-    text-decoration: none;
+    color: white;
+text-decoration: none;
+font-size: 1.3rem;
+font-family: 'Quicksand', sans-serif;
+margin-left: 2.5rem;
+margin-right: 2.5rem;
 
   }
 
 
   #nav a:hover{
-    border-bottom: 4px solid rgb(7, 139, 255);
-    background-color: white;
+
   	}
 
   .activeNav {
@@ -821,23 +832,17 @@
   	padding:			0; /* This gets rid of any alignment issues */
   	}
   #nav ul li{
-    background-color: white;
     z-index: 3;
   	padding-top:		0px; /* Introducing a padding between the li and the a give the illusion spaced items */
     border: none;
-    width: 80%;
+    width: 100%;
+    padding: .5rem;
   	}
   #nav ul li a{
-    color: black;
-    background-color: white;
-    font-size: 14.4px;
-    width: 70%;
-    position: relative;
-    padding-left: 1.5rem;
-    padding-right: 3rem;
-    padding-top: .60rem;
-    padding-bottom: .6rem;
-    border-bottom: 1px solid white;
+    color: white;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-family: 'Quicksand', sans-serif;
     /* Stop text wrapping and creating multi-line dropdown items */
   	}
   #nav li:hover ul{ /* Display the dropdown on hover */
@@ -847,27 +852,18 @@
   	text-decoration:	none;
   	}
   #nav li:hover ul a{ /* The persistent hover state does however create a global style for links even before they're hovered. Here we undo these effects. */
-  	  background-color: white;
-          letter-spacing: .08rem;
-  	text-decoration:	none;
-    text-transform: capitalize;
-    border-bottom:1px solid lightgray;
-  	color: black;
-  	font-size:			80%;
-    font-family: 'Rubik',"Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: white;
+text-decoration: none;
+font-size: 1.3rem;
+font-family: 'Quicksand', sans-serif;
   	}
   #nav li:hover ul li a:hover{ /* Here we define the most explicit hover states--what happens when you hover each individual link. */
-  	  background-color: rgb(7, 139, 255);
-  	color: white;
-  	text-decoration:	underline;
+
     transition: all 300ms ease;
-    border-bottom:rgb(7, 139, 255);
-    font-family: 'Rubik',"Helvetica Neue",Helvetica,Arial,sans-serif;
+
   	}
 
   #nav ul li a:hover {
-    border-bottom:rgb(7, 139, 255);
-    background-color: rgb(7, 139, 255)
     color: white;
     transition: all 300ms ease;
   }
@@ -1178,7 +1174,6 @@
 <script type="text/javascript" src="/scripts/app_scripts.js"></script>
 <script type="text/javascript" src="/scripts/fansite_scripts.js"></script>
 <script type="text/javascript" src="/scripts/FusionCharts.js"></script>
-<link href="https://fonts.googleapis.com/css?family=Anton|Noto+Sans|Quicksand|Source+Sans+Pro:200" rel="stylesheet">
 </head>
 <body>
   <!-- header area -->
